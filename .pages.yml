@@ -1,0 +1,34 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: products
+    label: Ürünler
+    type: collection
+    path: content/products
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: name
+    fields:
+      - name: name
+        label: Ürün adı
+        type: string
+        required: true
+      - name: category
+        label: Kategori
+        type: string
+      - name: price
+        label: Fiyat
+        type: string
+      - name: image
+        label: Ürün fotoğrafı
+        type: image
+      - name: description
+        label: Açıklama
+        type: text
+      - name: active
+        label: Yayında
+        type: boolean
